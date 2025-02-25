@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #003d4f;
+    font-family: "Cormorant Infant", sans-serif;
+
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fonts {
+    font-family: "Great Vibes", sans-serif;
+}
+.invite {
+    background-image: url("images/background.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 150px 0;
+    position: relative;
+}
+.invite img {
+    position: absolute;
+    top: -201px;
+    left: -159px;
+    z-index: 1;
+    rotate: 183deg;
+    opacity: 0.4;
+}
+.invite .invite-title {
+
+    font-size: 65px;
+    max-width: 600px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+}
+.invite .invite-name {
+    font-size: 85px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.date {
+    background-image: url("images/background.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 150px 0;
+}
+
+.date-image {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.date-image img {
+    display: block;
+    max-width: 100%;
+}
+
+.date-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: url('images/background.jpeg') center/cover no-repeat;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.date-time {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.data-text {
+    font-size: 65px;
+    text-align: center;
+}
+
+.main {
+    background-color: #003d4f;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main img {
+    right: -133px;
+    position: absolute;
+    top: -300px;
+    z-index: 1;
+    rotate: 243deg;
+    opacity: 0.4;
+}
+.main-info {
+    color: #f8efea;
+    font-size: 65px;
+}
+.main .no-fonts {
+    font-size: 48px;
+    margin: 20px 0 20px 0;
+    max-width: 650px;
+}
+.main-info-location {
+    margin-left: 30%;
+    margin-top: 20px;
+
+}
+.main-info-location p:not(.fonts) {
+    font-size: 40px;
+}
+.main-info-location a {
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    color: #f8efea;
+    border: 2px solid #f8efea;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.main-info-location a:hover {
+    color: #003d4f;
+    background-color: #f8efea;
+    border: 2px solid #f8efea;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.program-title {
+    padding: 70px 0 70px 0;
+    background-image: url("images/background.jpeg");
+}
+.program-title p{
+    font-size: 48px;
+}
+
+.program-title p:not(.fonts) {
+    font-size: 40px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+.program {
+    padding: 70px 0 70px 0;
+    background-color: #f8efea;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.event {
+    display: flex;
+    gap: 50px;
+}
+.event .time {
+    font-size: 40px;
+}
+
+.event .description {
+    font-size: 48px;
+}
+.event .text {
+    font-size: 24px;
+}
+
+.organizer {
+    padding: 100px 0 100px 0;
+    background-color: #003d4f;
+
+}
+.organizer .container {
+    color: #f8efea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.organizer-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.organizer-text {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.organizer-name {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.organizer-phone {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.organizer a {
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    color: #f8efea;
+    border: 2px solid #f8efea;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.organizer a:hover {
+    color: #003d4f;
+    background-color: #f8efea;
+    border: 2px solid #f8efea;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.dresscode {
+    padding: 100px 0 100px 0;
+    background-image: url("images/background.jpeg");
+}
+
+.dresscode .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dresscode-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.dresscode-info-text {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.dresscode-info-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dresscode-info-block {
+    width: 200px;
+    height: 120px;
+}
+.dresscode-info-block.first {
+    background-color: #c9c4c4;
+}
+.dresscode-info-block.second {
+    background-color: #e7ddd4;
+}
+.dresscode-info-block.third {
+    background-color: #5c5c5c;
+}
+.dresscode-info-block.four {
+    background-color: #302f2e;
+}
+
+
+.wishes {
+    padding: 100px 0 100px 0;
+    background-color: #f8efea;
+}
+
+.wishes .container {
+    color: #003d4f;
+}
+.wishes-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.wishes-text {
+    font-size: 40px;
+}
+
+.presence {
+    padding: 100px 0 100px 0;
+    background-image: url("images/background.jpeg");
+}
+
+.presence-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.presence-text {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.wedding-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #003d4f;
+    border-radius: 10px;
+    background:  #f8efea;
+    font-size: 30px;
+    font-family: "Cormorant Infant", sans-serif;
+
+    fieldset {
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: block;
+        margin: 5px 0;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 90%;
+        padding: 8px;
+        border: 1px solid #003d4f;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #003d4f;
+        color: #f8efea;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background: #013746;
+        }
+    }
+}
+
+.timout {
+    padding: 50px 0 50px 0;
+    background-color: #f8efea;
+}
+.timout-title {
+    font-size: 55px;
+    color: #003d4f;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #003d4f;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.time-box span {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.time-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
