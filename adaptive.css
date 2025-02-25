@@ -133,7 +133,36 @@
     }
 
 }
+@media (max-width: 625px) {
+    .container {
+        max-width: 520px;
+    }
 
+    .invite .invite-title {
+        font-size: 56px;
+    }
+
+    .invite .invite-name {
+        font-size: 48px;
+        max-width: 520px;
+        margin-bottom: 50px;
+    }
+    .invite img {
+        top: -201px;
+        left: -262px;
+    }
+    .date-image img {
+        display: block;
+        max-width: 90%;
+    }
+
+    .dresscode-info-block {
+        width: 80px;
+        height: 70px;
+    }
+
+
+}
 
 @media (max-width: 425px) {
     .container {
